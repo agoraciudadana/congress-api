@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(:version => 20121210211337) do
     t.string   "official_url",        :limit => 1024
     t.string   "proposal_type"
     t.string   "official_resolution"
-    t.integer  "category_name"
-    t.integer  "proposer_name"
+    t.string   "category_name"
+    t.string   "proposer_name"
     t.date     "proposed_at"
     t.date     "closed_at"
     t.datetime "created_at",                          :null => false

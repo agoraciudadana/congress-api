@@ -1,0 +1,8 @@
+<h1>Congress Proposals</h1>
+
+<ul>
+  <% @proposals.each do |proposal| %>
+    <li><%= link_to truncate(proposal.title, :length => 170), proposal %></li>
+  <% end %>
+</ul>
+
