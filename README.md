@@ -26,8 +26,6 @@ There is an index and show action for HTML and JSON formats:
     
     cd congress-api
     
-    bundle
-    
     rake congress:setup
     
     rails server
