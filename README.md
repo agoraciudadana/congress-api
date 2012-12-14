@@ -13,7 +13,7 @@ There is an index and show action for HTML and JSON formats:
 ### HTML
 
 * [http://congress-api.herokuapp.com/proposals](http://congress-api.herokuapp.com/proposals)
-* [http://congress-api.herokuapp.com/1](http://congress-api.herokuapp.com/1)
+* [http://congress-api.herokuapp.com/proposals/1](http://congress-api.herokuapp.com/proposals/1)
     
 ### JSON
 
