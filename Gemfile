@@ -5,6 +5,7 @@ gem 'pg'
 gem "congress-scrapper", "~> 0.0.2"
 gem 'inherited_resources'
 gem 'honeybadger'
+gem 'newrelic_rpm'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

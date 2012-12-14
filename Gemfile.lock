@@ -106,6 +106,7 @@ GEM
     multi_json (1.5.0)
     net-http-digest_auth (1.2.1)
     net-http-persistent (2.8)
+    newrelic_rpm (3.5.3.25)
     nokogiri (1.5.5)
     ntlm-http (0.1.1)
     pg (0.14.1)
@@ -205,6 +206,7 @@ DEPENDENCIES
   guard-rspec
   honeybadger
   inherited_resources
+  newrelic_rpm
   pg
   rails (= 3.2.9)
   rb-fsevent (~> 0.9.1)
