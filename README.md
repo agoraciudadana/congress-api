@@ -1,13 +1,25 @@
 # Congress API
 
 Making important decisions available to all
-
-[Beta site](http://congress-api.herokuapp.com)
   
 # Description:
 
 This app is an API for the proposals being voted at the [Spanish Congress](http://congreso.es).
-  
+
+## Use
+
+There is an index and show action for HTML and JSON formats:
+    
+### HTML
+
+    http://congress-api.herokuapp.com/proposals
+    http://congress-api.herokuapp.com/1
+    
+### JSON
+
+    http://congress-api.herokuapp.com/proposals.json
+    http://congress-api.herokuapp.com/proposals/1.json
+
 ## Install
 
     git clone git://github.com/agoraciudadana/congress-api.git
@@ -20,24 +32,9 @@ This app is an API for the proposals being voted at the [Spanish Congress](http:
     
     rails server
 
-## Use
-
-There is an index and show action for HTML and JSON formats:
-    
-### HTML
-
-    localhost:3000/proposals
-    localhost:3000/proposals/1
-    
-### JSON
-
-    localhost:3000/proposals.json
-    localhost:3000/proposals/1.json
-    
-You can update the current proposals and get news one by running:
+You can update the proposals by running:
     
     rake congress:update
-
 
 ## Specs
 
