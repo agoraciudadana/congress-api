@@ -110,6 +110,7 @@ GEM
     net-http-persistent (2.8)
     nokogiri (1.5.5)
     ntlm-http (0.1.1)
+    pg (0.14.1)
     polyglot (0.3.3)
     progressbar (0.12.0)
     pry (0.9.10)
@@ -205,6 +206,7 @@ DEPENDENCIES
   factory_girl_rails (~> 4.0)
   guard-rspec
   inherited_resources
+  pg
   rails (= 3.2.9)
   rb-fsevent (~> 0.9.1)
   rspec-rails

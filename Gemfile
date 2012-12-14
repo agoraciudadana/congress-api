@@ -1,8 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.9'
-
-gem 'sqlite3'
+gem 'pg'
 gem 'congress-scrapper', :git => "git://github.com/agoraciudadana/congress-scrapper.git"
 gem 'inherited_resources'
 
@@ -12,6 +11,7 @@ group :assets do
 end
 
 group :development, :test do
+  gem 'sqlite3'
   gem 'capybara'
   gem 'rspec-rails'
   gem "factory_girl_rails", "~> 4.0"
