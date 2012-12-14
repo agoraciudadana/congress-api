@@ -7,8 +7,8 @@ body {
 }
 
 th {
-  float: right;
-  min-width: 50px;
+  text-align:left;
+  min-width: 140px;
 }
 
 td {
@@ -34,5 +34,6 @@ a {
 
 #last_updated {
   float:right;
+  padding-right: 30px;
 }
 

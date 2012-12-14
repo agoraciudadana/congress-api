@@ -1,43 +1,35 @@
 <table>
   <tr>
-    <th>Title:<th>
+    <th>Título:</th>
     <td><%= @proposal.title %></td>
   </tr>
   <tr>
-    <th>Url:<th>
-    <td><%= link_to "official url", @proposal.official_url %></td>
+    <th>Enlace:</th>
+    <td><%= link_to "Oficial", @proposal.official_url %></td>
   </tr>
   <tr>
-    <th>Type:<th>
+    <th>Tipo:</th>
     <td><%= @proposal.proposal_type %></td>
   </tr>
   <tr>
-    <th>Resolution:<th>
-    <td><%= @proposal.official_resolution or "not available"%></td>
+    <th>Estado:</th>
+    <td><%= @proposal.official_resolution or "Debatiendo" %></td>
   </tr>
   <tr>
-    <th>Category:<th>
+    <th>Categoría:</th>
     <td><%= @proposal.category_name %></td>
   </tr>
   <tr>
-    <th>Proposer:<th>
+    <th>Propuesta por:</th>
     <td><%= @proposal.proposer_name %></td>
   </tr>
   <tr>
-    <th>Proposed at:<th>
-    <td><%= @proposal.proposed_at %></td>
+    <th>Fecha propuesta:</th>
+    <td><%= l @proposal.proposed_at %></td>
   </tr>
   <tr>
-    <th>Closed at:<th>
-    <td><%= @proposal.closed_at or "not available" %></td>
-  </tr>
-  <tr>
-    <th>Created at:<th>
-    <td><%= l @proposal.created_at %></td>
-  </tr>
-  <tr>
-    <th>Updated at:<th>
-    <td><%= @proposal.updated_at %></td>
+    <th>Fecha cerrada:</th>
+    <td><%= @proposal.closed_at ? l(@proposal.closed_at) : "No disponible" %></td>
   </tr>
 </table>
 

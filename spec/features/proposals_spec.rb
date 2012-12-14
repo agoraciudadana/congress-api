@@ -43,8 +43,8 @@ feature "Proposals"  do
       page.should have_content "Accepted"
       page.should have_content "Civil Rights"
       page.should have_content "Spain"
-      page.should have_content 1.month.ago.to_date
-      page.should have_content Chronic.parse(Date.yesterday).to_date
+      page.should have_content I18n.l 1.month.ago.to_date
+      page.should have_content I18n.l Chronic.parse(Date.yesterday).to_date
     end
 
   end
