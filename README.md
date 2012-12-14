@@ -25,6 +25,8 @@ There is an index and show action for HTML and JSON formats:
     git clone git://github.com/agoraciudadana/congress-api.git
     
     cd congress-api
+
+    trust the .rvmrc file
     
     rake congress:setup
     
