@@ -46,7 +46,7 @@ You can update the proposals by running:
         
     2. Add a comment to the issue to let people know you're going to work on it
         
-    3. Fork
+    3. Fork the repo
         
     4. Hack your changes in a topic branch (don't forget to write some tests ;)
         
