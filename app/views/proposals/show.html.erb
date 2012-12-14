@@ -5,7 +5,7 @@
   </tr>
   <tr>
     <th>Enlace:</th>
-    <td><%= link_to "Oficial", @proposal.official_url %></td>
+    <td><%= link_to "Oficial", @proposal.official_url, :target => "blank" %></td>
   </tr>
   <tr>
     <th>Tipo:</th>
@@ -33,4 +33,4 @@
   </tr>
 </table>
 
-<%= link_to 'Back', proposals_path %>
+<div id="back"><%= link_to 'Volver', :back %></div>
