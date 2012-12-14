@@ -5,7 +5,7 @@
   
 # Description:
 
-    This app is an API for the propals being voted at the [Spanish Congress](http://congreso.es).
+    This app is an API for the proposals being voted at the [Spanish Congress](http://congreso.es).
   
 ## Install
 
