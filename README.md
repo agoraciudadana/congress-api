@@ -1,11 +1,12 @@
 # Congress API
 
-    Making important decisions available to all
-    * [Beta site]()
+Making important decisions available to all
+
+[Beta site](http://congress-api.herokuapp.com)
   
 # Description:
 
-    This app is an API for the proposals being voted at the [Spanish Congress](http://congreso.es).
+This app is an API for the proposals being voted at the [Spanish Congress](http://congreso.es).
   
 ## Install
 
@@ -21,18 +22,21 @@
 
 ## Use
 
-    There is an index and show action for HTML and JSON formats:
+There is an index and show action for HTML and JSON formats:
     
-    HTML:
+### HTML
+
     localhost:3000/proposals
     localhost:3000/proposals/1
     
-    JSON:
+### JSON
+
     localhost:3000/proposals.json
     localhost:3000/proposals/1.json
     
-    You can update the current proposals and get news one by running:
-    rake congress:update```
+You can update the current proposals and get news one by running:
+    
+    rake congress:update
 
 
 ## Specs
