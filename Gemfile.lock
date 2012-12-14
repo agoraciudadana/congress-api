@@ -1,11 +1,3 @@
-GIT
-  remote: git://github.com/agoraciudadana/congress-scrapper.git
-  revision: aa908409d45ad2654de7ce06fed76333ea453567
-  specs:
-    congress-scrapper (0.0.2)
-      mechanize
-      progressbar
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -51,6 +43,9 @@ GEM
     chronic (0.8.0)
     coderay (1.0.8)
     columnize (0.3.6)
+    congress-scrapper (0.0.2)
+      mechanize
+      progressbar
     debugger (1.2.2)
       columnize (>= 0.3.1)
       debugger-linecache (~> 1.1.1)
@@ -201,7 +196,7 @@ PLATFORMS
 DEPENDENCIES
   capybara
   chronic
-  congress-scrapper!
+  congress-scrapper (~> 0.0.2)
   debugger
   factory_girl_rails (~> 4.0)
   guard-rspec
