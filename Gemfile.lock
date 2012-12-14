@@ -1,7 +1,8 @@
-PATH
-  remote: /Users/raimondgarcia/Documents/workspace/pdi/congress-scrapper
+GIT
+  remote: git://github.com/agoraciudadana/congress-scrapper.git
+  revision: aa908409d45ad2654de7ce06fed76333ea453567
   specs:
-    congress-scrapper (0.0.1)
+    congress-scrapper (0.0.2)
       mechanize
       progressbar
 

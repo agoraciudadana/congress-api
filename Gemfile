@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.9'
 
 gem 'sqlite3'
-gem 'congress-scrapper', :path => "/Users/raimondgarcia/Documents/workspace/pdi/congress-scrapper"
+gem 'congress-scrapper', :git => "git://github.com/agoraciudadana/congress-scrapper.git"
 gem 'inherited_resources'
 
 group :assets do
