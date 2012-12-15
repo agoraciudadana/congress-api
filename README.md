@@ -1,5 +1,8 @@
 # Congress API
 
+[![Build Status](https://secure.travis-ci.org/agoraciudadana/congress-api.png)](https://travis-ci.org/agoraciudadana/congress-api)
+[![Code Quality](https://codeclimate.com/badge.png)](https://codeclimate.com/github/agoraciudadana/congress-api)
+
 Making important decisions available to everyone
   
 # Description:
