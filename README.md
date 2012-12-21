@@ -31,13 +31,13 @@ There is an index and show action for HTML and JSON formats:
 
     bundle
     
-    rake congress:setup
+    bundle exec rake congress:setup
     
     rails server
 
 You can update the proposals by running:
     
-    rake congress:update
+    bundle exec rake congress:update
 
 ## Specs
 
