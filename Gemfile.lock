@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/agoraciudadana/congress-scrapper.git
-  revision: a907e72fd4a4927931a62e5ba4f06c3286a9faee
+  revision: 371af53d972bb4f6adf8f0a659444ca93aa5a1f7
   specs:
     congress-scrapper (0.0.3)
       mechanize
@@ -112,7 +112,7 @@ GEM
     net-http-digest_auth (1.2.1)
     net-http-persistent (2.8)
     newrelic_rpm (3.5.3.25)
-    nokogiri (1.5.5)
+    nokogiri (1.5.6)
     ntlm-http (0.1.1)
     pg (0.14.1)
     polyglot (0.3.3)
