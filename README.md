@@ -41,7 +41,7 @@ You can update the proposals by running:
 
 ## Specs
 
-    rake spec
+    bundle exec rake spec
 
 ## Contribute
 
