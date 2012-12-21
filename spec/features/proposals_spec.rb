@@ -7,7 +7,7 @@ feature "Proposals"  do
            :title               => "Proposal for the right to a house",
            :official_url        => "http://congreso.es/proposal/1",
            :proposal_type       => "Constitutional",
-           :official_resolution => "Accepted",
+           :status              => "Accepted",
            :category_name       => "Civil Rights",
            :proposer_name       => "Spain",
            :proposed_at         => 1.month.ago,
@@ -17,7 +17,7 @@ feature "Proposals"  do
            :title               => "Proposal for the right to work",
            :official_url        => "http://congreso.es/proposal/2",
            :proposal_type       => "Constitutional",
-           :official_resolution => "In progress",
+           :status              => "In progress",
            :category_name       => "Work Rights",
            :proposer_name       => "Spain",
            :proposed_at         => 2.months.ago,
@@ -60,7 +60,7 @@ feature "Proposals"  do
       housing['title'].should               == "Proposal for the right to a house"
       housing['official_url'].should        == "http://congreso.es/proposal/1"
       housing['proposal_type'].should       == "Constitutional"
-      housing['official_resolution'].should == "Accepted"
+      housing['status'].should              == "Accepted"
       housing['category_name'].should       == "Civil Rights"
       housing['proposer_name'].should       == "Spain"
       housing['proposed_at'].should         == 1.month.ago.strftime("%Y-%m-%d")
@@ -70,7 +70,7 @@ feature "Proposals"  do
       work['title'].should               == "Proposal for the right to work"
       work['official_url'].should        == "http://congreso.es/proposal/2"
       work['proposal_type'].should       == "Constitutional"
-      work['official_resolution'].should == "In progress"
+      work['status'].should              == "In progress"
       work['category_name'].should       == "Work Rights"
       work['proposer_name'].should       == "Spain"
       work['proposed_at'].should         == 2.months.ago.strftime("%Y-%m-%d")
@@ -84,7 +84,7 @@ feature "Proposals"  do
       proposal['title'].should               == "Proposal for the right to a house"
       proposal['official_url'].should        == "http://congreso.es/proposal/1"
       proposal['proposal_type'].should       == "Constitutional"
-      proposal['official_resolution'].should == "Accepted"
+      proposal['status'].should              == "Accepted"
       proposal['category_name'].should       == "Civil Rights"
       proposal['proposer_name'].should       == "Spain"
       proposal['proposed_at'].should         == 1.month.ago.strftime("%Y-%m-%d")

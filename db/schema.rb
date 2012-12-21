@@ -11,19 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121210211337) do
+ActiveRecord::Schema.define(:version => 20121221073331) do
 
   create_table "proposals", :force => true do |t|
-    t.string   "title",               :limit => 1024
-    t.string   "official_url",        :limit => 1024
+    t.string   "title",         :limit => 1024
+    t.string   "official_url",  :limit => 1024
     t.string   "proposal_type"
-    t.string   "official_resolution"
+    t.string   "status"
     t.string   "category_name"
     t.string   "proposer_name"
     t.date     "proposed_at"
     t.date     "closed_at"
-    t.datetime "created_at",                          :null => false
-    t.datetime "updated_at",                          :null => false
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
   end
 
 end
