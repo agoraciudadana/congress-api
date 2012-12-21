@@ -5,6 +5,7 @@ feature "Proposals"  do
   background do
     create :proposal, 
            :title               => "Proposal for the right to a house",
+           :body                => "The right to a safe home is essential to every human",
            :official_url        => "http://congreso.es/proposal/1",
            :proposal_type       => "Constitutional",
            :status              => "Accepted",
@@ -15,6 +16,7 @@ feature "Proposals"  do
 
     create :proposal, 
            :title               => "Proposal for the right to work",
+           :body                => "The right to fulfilling job is essential to every human",
            :official_url        => "http://congreso.es/proposal/2",
            :proposal_type       => "Constitutional",
            :status              => "In progress",
@@ -38,7 +40,8 @@ feature "Proposals"  do
       click_link "Proposal for the right to a house"
       
       page.should have_content "Proposal for the right to a house"
-      page.should have_css "a", "http://congreso.es/proposal/1"
+      page.should have_content "The right to a safe home is essential to every human"
+      page.should have_css     "a", "http://congreso.es/proposal/1"
       page.should have_content "Constitutional"
       page.should have_content "Accepted"
       page.should have_content "Civil Rights"
@@ -58,6 +61,7 @@ feature "Proposals"  do
 
       housing = proposals.first
       housing['title'].should               == "Proposal for the right to a house"
+      housing['body'].should                == "The right to a safe home is essential to every human"
       housing['official_url'].should        == "http://congreso.es/proposal/1"
       housing['proposal_type'].should       == "Constitutional"
       housing['status'].should              == "Accepted"
@@ -68,6 +72,7 @@ feature "Proposals"  do
 
       work = proposals.second
       work['title'].should               == "Proposal for the right to work"
+      work['body'].should                == "The right to fulfilling job is essential to every human"
       work['official_url'].should        == "http://congreso.es/proposal/2"
       work['proposal_type'].should       == "Constitutional"
       work['status'].should              == "In progress"
@@ -82,6 +87,7 @@ feature "Proposals"  do
       proposal = JSON.parse(page.source)
 
       proposal['title'].should               == "Proposal for the right to a house"
+      proposal['body'].should                == "The right to a safe home is essential to every human"
       proposal['official_url'].should        == "http://congreso.es/proposal/1"
       proposal['proposal_type'].should       == "Constitutional"
       proposal['status'].should              == "Accepted"

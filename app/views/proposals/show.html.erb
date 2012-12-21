@@ -31,6 +31,10 @@
     <th>Fecha cerrada:</th>
     <td><%= @proposal.closed_at ? l(@proposal.closed_at) : "No disponible" %></td>
   </tr>
+  <tr>
+    <th>Texto:</th>
+    <td><%= simple_format(@proposal.body) or "No disponible" %></td>
+  </tr>
 </table>
 
 <div id="back"><%= link_to 'Volver', :back %></div>
