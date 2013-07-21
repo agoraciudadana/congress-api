@@ -2,7 +2,7 @@ namespace :congress do
   desc "Basic rake task to get up and running"
   task :setup => :environment do
     Rake::Task['db:migrate'].invoke
-    Rake::Task['congress:scrape'].invoke
+    Rake::Task['congress:update'].invoke
   end
 
   desc "Update data from congreso.es"
