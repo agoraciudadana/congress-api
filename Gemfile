@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.9'
 gem 'pg'
-gem "congress-scrapper", :git => "git://github.com/agoraciudadana/congress-scrapper.git"
+gem "congress-scrapper", '0.0.4'
 gem 'inherited_resources'
 gem 'honeybadger'
 gem 'newrelic_rpm'
