@@ -20,5 +20,4 @@ group :development, :test do
   gem 'chronic'
   gem 'guard-rspec'
   gem 'rb-fsevent', '~> 0.9.1'
-  gem 'debugger'
 end
