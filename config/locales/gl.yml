@@ -1,0 +1,29 @@
+gl:
+  date:
+    day_names:
+    - domingo
+    - luns
+    - martes
+    - mércores
+    - xoves
+    - venres
+    - sábado
+    formats:
+      default: ! '%d de %B de %Y'
+    month_names:
+    - 
+    - xaneiro
+    - febreiro
+    - marzo
+    - abril
+    - maio
+    - xuño
+    - xullo
+    - agosto
+    - setembro
+    - outubro
+    - novembro
+    - decembro
+  time:
+    formats:
+      default: ! '%d de %B de %Y %H:%M'
